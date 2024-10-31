@@ -30,7 +30,8 @@ This repository represents Part 1 of the analysis, focused on foundational data 
 - `Smoke_Impact_vs_AQI_for_Renton_WA.png`: Combined time series visualization of smoke and AQI estimates, aiding in correlation analysis.
 - `Total_Acres_Burned_Per_Year_within_1800_Miles_of_Renton.png`: Yearly total acres burned, showing trends in wildfire severity over time.
 
-## Final files
+### Final files
+
 - **LICENSE**: License file specifying usage permissions for this repository.
 - **README.md**: This file, providing an overview of the project structure, data sources, analysis steps, and guidelines for reproduction.
 
@@ -51,14 +52,9 @@ This repository represents Part 1 of the analysis, focused on foundational data 
 
 ## Data Loading
 
-To simplify loading GeoJSON data for wildfire analysis, use the `WFReader` class provided by the professor. This class provides a streamlined way to parse the dataset and handle its quirks. Here’s an example of how to use it:
+To simplify loading GeoJSON data for wildfire analysis, use the `WFReader` class provided by the professor. This class provides a streamlined way to parse the dataset. Here’s an example of how to use it:
 
 ```python
 from wildfire.Reader import Reader as WFReader
 import geojson
-
-Install the required libraries via pip:
-```bash
-pip install pandas numpy geopandas matplotlib shapely
-
-
+! pip install pandas numpy geopandas matplotlib shapely
