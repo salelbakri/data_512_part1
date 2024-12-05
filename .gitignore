@@ -14,3 +14,5 @@ Intermediate output/df_renton_fires.csv
 !Intermediate output/
 !Src/
 !README.md
+*.pyc
+__pycache__
