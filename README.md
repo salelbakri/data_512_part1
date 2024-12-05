@@ -16,8 +16,39 @@ Wildfires in the western United States are becoming increasingly common and seve
 This repository represents Part 1 of the analysis, focused on foundational data processing and preliminary smoke impact estimation.
 
 ## Project Structure
+## Project Structure
+
+### Directory Structure
+
+```plaintext
+data_512_part1/
+├── Documents/
+│   ├── write_up.pdf                        # Final project report combining Part 1 and Part 2
+├── Data/
+│   ├── USGS_Wildland_Fire_Combined_Dataset.json # Raw wildfire data
+│   ├── census_income_industry_data.csv    # Census data on income and industry
+│   ├── additional_files.zip               # Zip files for raw data
+├── Intermediate output/
+│   ├── annual_smoke_estimate.csv           # Yearly smoke estimate data
+│   ├── aqi_data.csv                        # Air Quality Index data
+│   ├── fire_data_filtered.csv              # Filtered wildfire data for analysis
+│   ├── forecasted_smoke_estimates_2024_2049.csv # Forecasted smoke estimates
+├── Src/
+│   ├── analysis.ipynb                      # Core analysis and visualizations
+│   ├── common_analysis_part1_final.ipynb   # Part 1 analysis notebook
+│   ├── impact_on_health_analysis.ipynb     # Part 2 extension notebook
+├── README.md                               # Overview of the project
+├── LICENSE                                 # Licensing information
+├── .gitignore                              # Ignoring unnecessary files (e.g., `.DS_Store`)
+```
+
 
 ### Initial files
+
+The following raw data files are used in this project:
+
+1. The “Wildland Fire Polygons Fire Feature Data Open Source GeoJSON Files” were downloaded from the [Combined wildland fire datasets for the United States and certain territories, 1800s-Present (combined wildland fire polygons)](https://www.sciencebase.gov/catalog/item/61aa537dd34eb622f699df81). From this, we used the file "USGS_Wildland_Fire_Combined_Dataset.json" as a base for our wildfire data for Salina. This data was then filtered to contain fires that occurred after 1963 within 1250 miles from Salina.  
+
 
 - **USGS Wildland Fire Database**: The primary dataset containing wildfire incidents, sourced from the U.S. Geological Survey (USGS).
 - **City Location Data**: Coordinates of Renton, WA, used for proximity calculations.
