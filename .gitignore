@@ -1,1 +1,16 @@
 Intermediate output/df_renton_fires.csv
+# Ignore macOS system files
+.DS_Store
+
+
+# Ignore other unnecessary files
+*.log
+*.tmp
+*.bak
+
+
+# Allow certain directories and files
+!Documents/
+!Intermediate output/
+!Src/
+!README.md
