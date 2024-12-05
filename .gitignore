@@ -19,3 +19,4 @@ __pycache__
 data_512_local/
 backup/data_512_part1/
 data_512_part1 copy/
+.DS_Store
